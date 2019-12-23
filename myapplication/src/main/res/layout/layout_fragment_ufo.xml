@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:text="UFO飞碟好物"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:id="@+id/nfc"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/nfc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </ImageView>
+
+        <TextView
+            android:layout_marginLeft="23dp"
+            android:layout_below="@+id/nfc"
+            android:textSize="11sp"
+            android:textColor="#000000"
+            android:text="NFC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+
+        <ImageView
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/all"
+
+            android:src="@mipmap/all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </ImageView>
+
+        <TextView
+            android:layout_marginRight="27dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/all"
+            android:textSize="11sp"
+            android:textColor="#000000"
+            android:text="All"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+
+
+
+
+
+        <RelativeLayout
+            android:layout_toLeftOf="@id/all"
+            android:layout_toRightOf="@+id/nfc"
+            android:background="@drawable/relativeback"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_centerInParent="true"
+            android:layout_width="200dp"
+            android:layout_height="45dp">
+
+            <ImageView
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/sou"
+                android:layout_width="23dp"
+                android:layout_height="23dp">
+            </ImageView>
+
+            <TextView
+                android:textColor="#8A8A8B"
+                android:layout_marginLeft="55dp"
+                android:layout_centerVertical="true"
+                android:text="搜索品牌"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <com.google.android.material.tabs.TabLayout
+            app:tabMode="scrollable"
+            app:tabIndicatorColor="#fff"
+            app:tabSelectedTextColor="#000000"
+            app:tabTextColor="#242424"
+            android:id="@+id/ufo_tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+        </com.google.android.material.tabs.TabLayout>
+
+    </LinearLayout>
+
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <LinearLayout
+                android:clipChildren="false"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.stx.xhb.xbanner.XBanner
+                    app:isClipChildrenMode="true"
+                    android:id="@+id/ufo_banner"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    app:AutoPlayTime="3000"
+                    app:pointsContainerBackground="#44aaaaaa"
+                    app:pointsPosition="RIGHT"
+                    app:tipTextSize="12sp"
+                    app:isShowNumberIndicator="true"
+                    app:isShowIndicatorOnlyOne="true"
+                    app:pageChangeDuration="800"/>
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:id="@+id/ufo_centerimage"
+                    android:src="@mipmap/datudatu"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp">
+
+                </ImageView>
+
+                <ImageView
+                    android:visibility="gone"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/hhhrenqi"
+                    android:id="@+id/ufo_hhhimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp">
+
+                </ImageView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:background="#F5F7F6"
+                    android:id="@+id/ufo_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+
+
+            </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+

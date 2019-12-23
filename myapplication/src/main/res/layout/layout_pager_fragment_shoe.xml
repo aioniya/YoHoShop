@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:id="@+id/man_scrollview"
+    >
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/man_appbarlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.youth.banner.Banner
+                    android:id="@+id/man_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                </com.youth.banner.Banner>
+
+                <LinearLayout
+
+
+
+
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:layout_width="30dp"
+                    android:layout_height="3dp"
+                    android:background="#000000">
+
+                </LinearLayout>
+
+                <ImageView
+
+
+
+
+                    android:scaleType="fitXY"
+                    android:id="@+id/man_xingqiyi"
+                    android:src="@mipmap/schaogou"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </ImageView>
+
+
+                <LinearLayout
+
+
+
+
+
+
+
+
+                    android:background="@mipmap/sxinpin"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+                </LinearLayout>
+
+
+
+
+
+                <ImageView
+
+
+
+
+
+
+
+
+
+                    android:layout_marginTop="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/sxinren"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></ImageView>
+
+
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:src="@mipmap/sremen"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </ImageView>
+
+                <LinearLayout
+                    android:background="@drawable/linearback"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+
+                        android:src="@mipmap/syundong"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </ImageView>
+
+
+                    <ImageView
+
+                        android:src="@mipmap/srehuodong"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </ImageView>
+
+                    <ImageView
+
+                        android:src="@mipmap/srepinpai"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </ImageView>
+
+                    <ImageView
+
+                        android:src="@mipmap/sone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </ImageView>
+                    <ImageView
+
+                        android:src="@mipmap/stwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </ImageView>
+                    <ImageView
+
+                        android:src="@mipmap/sthree"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </ImageView>
+                    <ImageView
+
+                        android:src="@mipmap/sfour"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </ImageView>
+                </LinearLayout>
+            </LinearLayout>
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+    <com.google.android.material.tabs.TabLayout
+        app:tabIndicatorColor="@color/tabblack"
+        android:background="#FFFFFF"
+        app:tabMode="scrollable"
+        android:id="@+id/man_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.tabs.TabLayout>
+
+</com.google.android.material.appbar.AppBarLayout>
+
+
+<LinearLayout
+app:layout_behavior="@string/appbar_scrolling_view_behavior"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+
+        android:id="@+id/man_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.jcodecraeer.xrecyclerview.XRecyclerView>
+</androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+
+</LinearLayout>
+
+

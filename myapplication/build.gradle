@@ -1,0 +1,165 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.mob.sdk'
+MobSDK {
+    appKey "2d765690886e0"
+    appSecret "3a15817202a2195086ca896cea04b480"
+    SMSSDK {}
+    ShareSDK {
+        version "3.6.3"
+        //平台配置信息
+        devInfo {
+            Wechat {
+                appId "wx4868b35061f87885"
+                appSecret "64020361b8ec4c99936c0e3999a9f249"
+            }
+            QQ {
+                appId "100371282"
+                appKey "aed9b0303e3ed1e27bae87c33761161d"
+                shareByAppClient true
+            }
+            Facebook {
+                appKey "1412473428822331"
+                appSecret "a42f4f3f867dc947b9ed6020c2e93558"
+                callbackUri "https://mob.com"
+            }
+            SinaWeibo {
+                appKey "568898243"
+                appSecret "38a4f8204cc784f81f9f0daaf31e02e3"
+                callbackUri "http://www.sharesdk.cn"
+                shareByAppClient true
+            }
+        }
+    }
+}
+android {
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+
+    useLibrary 'org.apache.http.legacy'
+
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId "com.example.myapplication"
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+        versionCode rootProject.ext.android["versionCode"]
+        versionName rootProject.ext.android["versionName"]
+        testInstrumentationRunner rootProject.ext.dependencies["androidJUnitRunner"]
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            buildConfigField "boolean", "USE_CANARY", "true"
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            buildConfigField "boolean", "USE_CANARY", "false"
+            minifyEnabled true
+            shrinkResources true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        disable 'InvalidPackage'
+        disable "ResourceType"
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'me.jessyan:arms:2.5.2'
+    implementation 'me.jessyan:arms-imageloader-glide:2.5.2'
+
+    //view
+    implementation rootProject.ext.dependencies["autosize"]
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.android.material:material:1.0.0'
+    annotationProcessor(rootProject.ext.dependencies["butterknife-compiler"]) {
+        exclude module: 'support-annotations'
+    }
+
+    //tools
+    annotationProcessor rootProject.ext.dependencies["dagger2-compiler"]
+
+    //注意 Arms 核心库现在并不会依赖某个 EventBus, 要想使用 EventBus, 还请在项目中自行依赖对应的 EventBus
+    //现在支持两种 EventBus, greenrobot 的 EventBus 和畅销书 《Android源码设计模式解析与实战》的作者 何红辉 所作的 AndroidEventBus
+    //依赖后 Arms 会自动检测您依赖的 EventBus 并自动注册
+    //建议使用 AndroidEventBus, 特别是组件化项目, 原因请看 https://github.com/hehonghui/AndroidEventBus/issues/49
+    //这种做法可以让使用者有自行选择三方库的权利, 并且还可以减轻 Arms 的体积
+    implementation rootProject.ext.dependencies["androideventbus"]
+//    implementation rootProject.ext.dependencies["eventbus"]
+
+    //沉浸式
+    implementation 'com.gyf.barlibrary:barlibrary:2.3.0'
+
+
+    //banner
+    implementation 'com.youth.banner:banner:1.4.10'
+
+    //recyclerview
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    api('com.jcodecraeer:xrecyclerview:1.5.9') {
+        exclude group: 'com.android.support'
+    }
+    implementation 'com.android.support:design:28.0.0'
+
+    //xiala shua
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.1'
+
+
+    implementation 'org.greenrobot:eventbus:3.1.1'
+
+
+    //tablayou
+    implementation 'q.rorbin:VerticalTabLayout:1.2.5'
+    //butter knife
+
+
+    //utils
+    api 'com.blankj:utilcode:1.23.4'
+
+    implementation 'com.android.support:multidex:1.0.3'
+
+
+    //xbanner
+    implementation "com.daimajia.swipelayout:library:1.2.0@aar"
+    implementation 'com.github.xiaohaibin:XBanner:1.6.1'
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+
+
+    //erweima
+    implementation 'com.github.jwkj:LibZXing:v1.0.4'
+
+    //eventbus
+    implementation 'org.greenrobot:eventbus:3.1.1'
+
+
+    implementation 'me.thewyp:avatar:1.0.4'
+
+    implementation 'com.zhy:base-rvadapter:3.0.3'
+
+
+    //侧滑
+    implementation "com.daimajia.swipelayout:library:1.2.0@aar"
+
+
+    //test
+    debugImplementation rootProject.ext.dependencies["canary-debug"]
+    releaseImplementation rootProject.ext.dependencies["canary-release"]
+    testImplementation rootProject.ext.dependencies["canary-release"]
+    testImplementation rootProject.ext.dependencies["junit"]
+    implementation files('libs\\alipaySdk-15.6.5-20190718211148.aar')
+
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp">
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/dengluo"
+            android:id="@+id/guanzhu_images"
+            android:layout_width="60dp"
+            android:layout_height="60dp">
+        </ImageView>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/guanzhu_images"
+            android:text="隔壁皇子"
+            android:id="@+id/texts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/guanzhu"
+
+
+            android:background="@drawable/guanzhulinearback"
+            android:layout_below="@+id/texts"
+            android:text="    关注    "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

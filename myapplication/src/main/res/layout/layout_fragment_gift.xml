@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f0f0f0"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+                        <RelativeLayout
+                            android:background="#fff"
+                            app:layout_collapseMode="parallax"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp">
+
+                            <TextView
+                                android:text="YO!社区"
+                                android:textSize="20sp"
+                                android:textColor="#000000"
+                                android:layout_centerInParent="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </TextView>
+
+                            <ImageView
+                                android:id="@+id/gift_touxiang"
+                                android:layout_marginLeft="10dp"
+                                android:layout_centerVertical="true"
+                                android:src="@mipmap/dengluo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </ImageView>
+
+                            <ImageView
+                                android:id="@+id/xiaoxi"
+                                android:layout_marginRight="10dp"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"
+                                android:src="@mipmap/xiaoxi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </ImageView>
+
+                            <ImageView
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="20dp"
+                                android:layout_toLeftOf="@+id/xiaoxi"
+                                android:src="@mipmap/sousuo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </ImageView>
+
+
+
+                        </RelativeLayout>
+
+
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+<LinearLayout
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.google.android.material.tabs.TabLayout
+        app:tabTextColor="#424242"
+        app:tabSelectedTextColor="#000000"
+        android:id="@+id/shequ_tablayout"
+        app:tabIndicatorColor="#000000"
+        android:layout_width="150dp"
+        android:layout_gravity="center"
+        android:layout_height="50dp">
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/shequ_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.viewpager.widget.ViewPager>
+
+</LinearLayout>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</LinearLayout>

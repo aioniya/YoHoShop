@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F0F0F0">
+
+    <LinearLayout
+        android:id="@+id/tops"
+        android:background="#fff"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:background="@mipmap/hongsebeijing"
+            android:layout_width="120dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:gravity="center|bottom"
+                        android:id="@+id/youhui_money"
+                        android:text="30"
+                        android:layout_centerInParent="true"
+                        android:textSize="30sp"
+                        android:textColor="#FC5960"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:paddingTop="5dp"
+                        android:gravity="center|top"
+                        android:text="满多少都不能用"
+                        android:layout_centerInParent="true"
+                        android:textSize="12sp"
+                        android:textColor="#FC5960"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:id="@+id/s"
+                android:layout_margin="10dp"
+                android:textColor="#FC5960"
+                android:text="[活动券]"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <TextView
+                android:textSize="11sp"
+                android:layout_below="@+id/s"
+                android:layout_margin="10dp"
+                android:textColor="#B0B0B0"
+                android:text="2019.12.15-2019.12.20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+            <TextView
+                android:textSize="12sp"
+                android:id="@+id/youhui_title"
+                android:layout_toRightOf="@+id/s"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <CheckBox
+                android:button="@null"
+                android:id="@+id/youhui_shuoming"
+                android:layout_margin="10dp"
+                android:textSize="11sp"
+                android:layout_alignParentBottom="true"
+                android:textColor="#B0B0B0"
+                android:text="使用说明 ∨"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </CheckBox>
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/daoqi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </ImageView>
+            <ImageView
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/lijishiyong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </ImageView>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/shuoming"
+        android:visibility="gone"
+        android:background="#FBFBFB"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/tops"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="11sp"
+            android:textColor="#202020"
+            android:text="全球通用"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/telishangpin"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="11sp"
+            android:textColor="#202020"
+            android:text="全球通用"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="118dp"
+        android:background="@drawable/huiseyuan"
+        android:layout_width="10dp"
+        android:layout_height="10dp">
+
+    </TextView>
+    <TextView
+        android:layout_marginTop="105dp"
+        android:layout_marginLeft="118dp"
+        android:background="@drawable/huiseyuan"
+        android:layout_width="10dp"
+        android:layout_height="10dp">
+
+    </TextView>
+</RelativeLayout>

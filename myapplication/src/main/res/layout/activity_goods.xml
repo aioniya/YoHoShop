@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mvp.view.activity.GoodsActivity">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/goods_NestedScrollView"
+            android:background="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@drawable/man_02_pressed"
+                        android:id="@+id/goods_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_below="@+id/goods_image"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="20dp"
+                        android:text="000"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/goods_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp">
+                        <TextView
+                            android:layout_marginLeft="20dp"
+                            android:textSize="20sp"
+                            android:textColor="#DA0000"
+                            android:text="￥258"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+
+                        <TextView
+                            android:textSize="12sp"
+                            android:text=" ￥408"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:scaleType="fitXY"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:src="@mipmap/datu1">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="350dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/datu2">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="360dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/datu3">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/datu4">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/datu5">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/datu6">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/datu7">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/datu8">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/datu9">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/datu10">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/datu11">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/datu12">
+
+                    </ImageView>
+                </LinearLayout>
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+        </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+
+    <Button
+        android:id="@+id/goods_fanhui"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:text="＜"
+        android:background="@drawable/goodback"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+
+        >
+
+    </Button>
+
+    <Button
+        android:paddingTop="5dp"
+        android:id="@+id/goods_fenxiang"
+        android:drawableTop="@mipmap/fenxiang"
+        android:layout_marginRight="70dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/goodback"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+
+        >
+
+    </Button>
+
+    <Button
+        android:id="@+id/goods_gongneng"
+        android:layout_marginRight="10dp"
+        android:paddingTop="5dp"
+        android:layout_alignParentRight="true"
+        android:drawableTop="@mipmap/shengluehao"
+        android:background="@drawable/goodback"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+
+        >
+
+    </Button>
+
+
+    <RelativeLayout
+        android:background="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+
+        <ImageView
+            android:layout_marginLeft="30dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/dianpu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+
+        <ImageView
+            android:layout_marginLeft="150dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/shoucang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+
+        <Button
+            android:id="@+id/goods_gouwuche"
+            android:textSize="15sp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:textColor="#fff"
+            android:text="加入购物车"
+            android:background="@drawable/goodsbutton"
+            android:layout_alignParentRight="true"
+            android:layout_width="140dp"
+            android:layout_height="50dp">
+
+        </Button>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/tools"
+        android:background="#D02C2C2C"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/yanse"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <TextView
+            android:id="@+id/goods_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:textColor="#F5F7F6"
+            android:textSize="20sp"
+            android:text="商品详情"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+    </RelativeLayout>
+</RelativeLayout>

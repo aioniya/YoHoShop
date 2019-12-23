@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/pinpei_RecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+    <LinearLayout
+        android:background="#E7E7E7"
+        android:layout_width="1dp"
+        android:layout_height="match_parent">
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_weight="4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+<!--        <com.youth.banner.Banner-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:id="@+id/tops_banner"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="80dp">-->
+
+<!--        </com.youth.banner.Banner>-->
+        <com.jcodecraeer.xrecyclerview.XRecyclerView
+            android:id="@+id/pinpei_XRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.jcodecraeer.xrecyclerview.XRecyclerView>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

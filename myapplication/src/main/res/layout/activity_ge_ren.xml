@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mvp.view.activity.GeRenActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:background="#383838"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:id="@+id/geren_fanhui"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="＜ 个人信息"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+           <RelativeLayout
+               android:id="@+id/geren_touxiang"
+               android:layout_width="match_parent"
+               android:layout_height="60dp">
+                <TextView
+                    android:textSize="15sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="#1D1D1D"
+                    android:text="头像"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+               <ImageView
+                   android:id="@+id/touxiangs"
+                   android:layout_marginRight="40dp"
+                   android:layout_centerVertical="true"
+
+                   android:layout_alignParentRight="true"
+                   android:layout_width="50dp"
+                   android:layout_height="50dp">
+
+               </ImageView>
+               <TextView
+                   android:textSize="15sp"
+                   android:layout_marginRight="10dp"
+                   android:layout_alignParentRight="true"
+                   android:layout_centerVertical="true"
+                   android:text="＞"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+               </TextView>
+
+           </RelativeLayout>
+            <LinearLayout
+                android:background="#7E7E7E"
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp">
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/geren_nicheng"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <TextView
+                    android:textSize="15sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="#1D1D1D"
+                    android:text="昵称"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/geren_name"
+                    android:layout_marginRight="10dp"
+                    android:text="17600781029"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/geren_nicheng_jian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/geren_nicheng_jian"
+                    android:textSize="15sp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="＞"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:background="#7E7E7E"
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp">
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/geren_qianming"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <TextView
+                    android:textSize="15sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="#1D1D1D"
+                    android:text="我的签名"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+
+
+                <TextView
+
+                    android:textSize="15sp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="＞"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:background="#7E7E7E"
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp">
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/geren_huiyuan"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <TextView
+                    android:textSize="15sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="#1D1D1D"
+                    android:text="会员等级"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+
+
+                <TextView
+
+                    android:textSize="15sp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="＞"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:background="#7E7E7E"
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp">
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/geren_erweima"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <TextView
+                    android:textSize="15sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="#1D1D1D"
+                    android:text="我的二维码"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+                <ImageView
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/geren_ma_jian"
+                    android:src="@mipmap/litterma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/geren_ma_jian"
+                    android:textSize="15sp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="＞"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:background="#7E7E7E"
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp">
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/geren_kouling"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <TextView
+                    android:textSize="15sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="#1D1D1D"
+                    android:text="我的潮流口令"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+                <TextView
+                    android:layout_marginRight="10dp"
+                    android:text="1562211u4"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/geren_kouling_jian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/geren_kouling_jian"
+                    android:textSize="15sp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="＞"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:background="#7E7E7E"
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp">
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/geren_wodexingbie"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <TextView
+                    android:textSize="15sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="#1D1D1D"
+                    android:text="性别"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/geren_sex"
+                    android:layout_marginRight="10dp"
+                    android:text="选性别"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/geren_xingbie_jian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/geren_xingbie_jian"
+                    android:textSize="15sp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="＞"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:background="#7E7E7E"
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp">
+
+            </LinearLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/geren_shengri"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <TextView
+                    android:textSize="15sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="#1D1D1D"
+                    android:text="生日"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/geren_nianyue"
+                    android:layout_marginRight="10dp"
+                    android:text="填写出生年月"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/geren_shengri_jian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/geren_shengri_jian"
+                    android:textSize="15sp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="＞"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:background="#7E7E7E"
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp">
+
+            </LinearLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/geren_shengao"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <TextView
+                    android:textSize="15sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="#1D1D1D"
+                    android:text="身高"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+
+
+                <TextView
+
+                    android:textSize="15sp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="＞"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:background="#7E7E7E"
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp">
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/geren_tizhong"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <TextView
+                    android:textSize="15sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="#1D1D1D"
+                    android:text="体重"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+
+
+                <TextView
+
+                    android:textSize="15sp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="＞"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:background="#EFEFEF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@mipmap/dibu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </ImageView>
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp">
+        <CheckBox
+            android:id="@+id/shopcarone_check"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+        </CheckBox>
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:src="@mipmap/beijings"
+            android:id="@+id/shopcarone_image"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/shopcarone_check"
+            android:layout_width="90dp"
+            android:layout_height="100dp">
+        </ImageView>
+
+        <TextView
+
+
+
+
+
+            android:textColor="#000000"
+            android:text="几乎能创下好多东西"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/shopcarone_image"
+            android:id="@+id/shopcarone_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+        <LinearLayout
+            android:id="@+id/shopcarone_all"
+            android:visibility="gone"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/shopcarone_image"
+            android:layout_width="150dp"
+            android:layout_height="40dp">
+
+
+            <RelativeLayout
+                android:id="@+id/shopcarone_jian"
+                android:background="@drawable/linearback"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:layout_centerInParent="true"
+                    android:text="－"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+            </RelativeLayout>
+            <RelativeLayout
+                android:background="@drawable/linearback"
+                android:layout_weight="1.7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/shopcarone_shuliang"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:layout_centerInParent="true"
+                    android:text="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/shopcarone_jia"
+                android:background="@drawable/linearback"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:layout_centerInParent="true"
+                    android:text="＋"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:textColor="#525252"
+            android:text="1"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:id="@+id/shopcarone_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+        <TextView
+
+
+
+
+
+            android:id="@+id/shopcarone_color"
+            android:text="yanse"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/shopcarone_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/shopcarone_momery"
+            android:layout_marginTop="100dp"
+            android:textColor="#C90000"
+            android:text="yanse"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/shopcarone_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

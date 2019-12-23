@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical"
+    >
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/whiteback"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.8">
+                        <TextView
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:textColor="#000000"
+                            android:gravity="center|bottom"
+                            android:text="0"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:paddingTop="10dp"
+                            android:text="关注"
+                            android:gravity="center|top"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.8">
+                        <TextView
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:textColor="#000000"
+                            android:gravity="center|bottom"
+                            android:text="0"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:paddingTop="10dp"
+                            android:text="粉丝"
+                            android:gravity="center|top"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.8">
+                        <TextView
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:textColor="#000000"
+                            android:gravity="center|bottom"
+                            android:text="0"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:paddingTop="10dp"
+                            android:text="获赞与收藏"
+                            android:gravity="center|top"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+
+
+
+            <RadioGroup
+                android:layout_centerInParent="true"
+                android:background="#F0F0F0"
+                android:id="@+id/shequ_group"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:paddingRight="20dp"
+                    android:gravity="right|center"
+                    android:textColor="@drawable/radiobuttonback"
+                    android:button="@null"
+                    android:checked="true"
+                    android:id="@+id/shequ_neirong_bt"
+                    android:text="内容 post"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                </RadioButton>
+                <RadioButton
+                    android:paddingLeft="20dp"
+                    android:gravity="left|center"
+                    android:textColor="@drawable/radiobuttonback"
+                    android:button="@null"
+                    android:id="@+id/shequ_shoucang_bt"
+                    android:text="收藏 collect"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                </RadioButton>
+            </RadioGroup>
+
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:background="#D8D8D8"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp">
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/shequ_images"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/bijiben"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </ImageView>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/shequ_texts"
+                    android:layout_centerInParent="true"
+                    android:textColor="#000000"
+                    android:text="发布你的第一篇内容,可立赚5元"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/shequ_button"
+                    android:textColor="#fff"
+                    android:background="@drawable/carback"
+                    android:layout_centerInParent="true"
+                    android:text="去发布"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content">
+
+                </Button>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/shequ_imageone"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/youjiang"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </ImageView>
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/shequ_imagetwo"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/yotop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </ImageView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/shequ_imagethree"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/yoyuansu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                </ImageView>
+            </LinearLayout>
+
+
+            <ImageView
+
+                android:src="@mipmap/zhecaishiyouhuo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </ImageView>
+        </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

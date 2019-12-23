@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:background="#fff"
+        android:id="@+id/fragment_home_toolbar"
+        app:layout_collapseMode="pin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:src="@mipmap/sao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ImageView>
+
+            <RelativeLayout
+                android:id="@+id/home_sou"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/reback"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+                <ImageView
+                    android:id="@+id/fangdajing"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/sou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </ImageView>
+
+                <TextView
+                    android:textColor="#808080"
+                    android:text="VANS酒店安娜海姆系列发售"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/fangdajing"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </RelativeLayout>
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/xiaoxi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </ImageView>
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+
+
+
+
+    <FrameLayout
+        android:layout_below="@+id/fragment_home_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/heard_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/heard_tablayout">
+
+        </androidx.viewpager.widget.ViewPager>
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/heard_tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_home_toolbar"
+            android:background="#fff"
+            app:tabIndicatorColor="@color/white"
+            app:tabSelectedTextColor="@color/black">
+
+        </com.google.android.material.tabs.TabLayout>
+    </FrameLayout>
+
+
+</RelativeLayout>

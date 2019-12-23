@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="190dp"
+        android:layout_height="310dp">
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/guanzhu_image"
+            android:layout_width="180dp"
+            android:layout_height="250dp">
+        </ImageView>
+
+        <TextView
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/guanzhu_image"
+            android:id="@+id/guanzhu_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/touxiang"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/guanzhu_name"
+            android:src="@mipmap/touxiangs"
+            android:layout_width="20dp"
+            android:layout_height="20dp">
+        </ImageView>
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/touxiang"
+            android:layout_below="@+id/guanzhu_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <ImageView
+            android:layout_marginTop="3dp"
+            android:layout_toLeftOf="@id/shuzi"
+            android:layout_below="@+id/guanzhu_name"
+            android:src="@mipmap/bixin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+
+        <TextView
+            android:layout_marginTop="3dp"
+            android:textSize="12sp"
+            android:id="@+id/shuzi"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true"
+            android:text="47"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/guanzhu_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+    </RelativeLayout>
+
+
+</LinearLayout>

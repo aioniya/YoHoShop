@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mvp.view.activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="683dp">
+    </FrameLayout>
+
+
+
+    <RadioGroup
+        android:id="@+id/main_group"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/groupback"
+        android:orientation="horizontal">
+        <RadioButton
+
+
+
+            android:textSize="12sp"
+            android:paddingTop="20dp"
+            android:drawableTop="@drawable/shouye"
+            android:checked="true"
+            android:textColor="@drawable/textcolor"
+            android:textAlignment="center"
+            android:button="@null"
+            android:text="首页"
+            android:id="@+id/main_home_bt"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        </RadioButton>
+
+        <RadioButton
+
+
+            android:textSize="12sp"
+            android:paddingTop="20dp"
+            android:drawableTop="@drawable/fenlei"
+            android:textColor="@drawable/textcolor"
+            android:textAlignment="center"
+            android:button="@null"
+            android:text="分类"
+            android:id="@+id/main_type_bt"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        </RadioButton>
+
+        <RadioButton
+            android:textColor="@drawable/textcolor"
+            android:textAlignment="center"
+            android:button="@null"
+            android:id="@+id/main_ufo_bt"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        </RadioButton>
+
+        <RadioButton
+
+
+            android:textSize="12sp"
+            android:paddingTop="20dp"
+            android:drawableTop="@drawable/liwu"
+            android:textColor="@drawable/textcolor"
+            android:textAlignment="center"
+            android:button="@null"
+            android:text="社区有礼"
+            android:id="@+id/main_gift_bt"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        </RadioButton>
+
+        <RadioButton
+
+
+
+            android:textSize="12sp"
+            android:paddingTop="20dp"
+            android:drawableTop="@drawable/wode"
+            android:textColor="@drawable/textcolor"
+            android:textAlignment="center"
+            android:button="@null"
+            android:text="我的"
+            android:id="@+id/main_mine_bt"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        </RadioButton>
+
+    </RadioGroup>
+
+
+
+
+    <ImageView
+        android:id="@+id/main_aj"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/aj"
+        android:layout_width="50dp"
+        android:layout_height="50dp">
+
+    </ImageView>
+
+
+    <Button
+        android:id="@+id/main_gouwuche"
+        android:paddingTop="12dp"
+        android:drawableTop="@mipmap/gouwuche"
+        android:background="@drawable/carback"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="70dp"
+        android:layout_marginRight="20dp">
+    </Button>
+
+    <Button
+        android:id="@+id/main_piaofu"
+        android:textColor="#fff"
+        android:text="0"
+        android:layout_marginBottom="100dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/redback"
+        android:layout_width="20dp"
+        android:layout_height="20dp">
+
+    </Button>
+
+</RelativeLayout>

@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mvp.view.activity.WoDeActivity">
+<androidx.core.widget.NestedScrollView
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/tu"
+                android:scaleType="fitXY"
+                android:src="@mipmap/login_titlepic"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+            </ImageView>
+
+
+
+
+            <RelativeLayout
+
+                android:id="@+id/edone"
+                android:layout_below="@id/tu"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+
+                <ImageView
+                    android:id="@+id/shouji"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/shouji"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp">
+
+                </ImageView>
+
+
+
+
+                <TextView
+                    android:textColor="#9E9E9E"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/wode_spinner"
+                    android:text="丨"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+
+                <EditText
+                    android:id="@+id/wode_shoujihao"
+                    android:singleLine="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/editedback"
+                    android:hint="输入手机号"
+                    android:paddingLeft="105dp"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                </EditText>
+
+                <Spinner
+                    android:id="@+id/wode_spinner"
+                    android:layout_toRightOf="@id/shouji"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </Spinner>
+
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/wode_cuowu"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/cuowu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </ImageView>
+
+            </RelativeLayout>
+
+            <LinearLayout
+
+                android:background="#ADADAD"
+                android:layout_below="@+id/edone"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp">
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/edittwo"
+                android:layout_below="@+id/edone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:id="@+id/wode_donghuaone"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+                    <ImageView
+                        android:layout_marginTop="10dp"
+
+                        android:layout_marginLeft="20dp"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/suozi"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp">
+
+                    </ImageView>
+
+                    <EditText
+                        android:id="@+id/wode_mimaone"
+                        android:inputType="numberPassword"
+                        android:singleLine="true"
+                        android:background="@drawable/editedback"
+                        android:hint="请输入密码"
+                        android:paddingLeft="60dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="15sp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+                    </EditText>
+
+
+
+                    <CheckBox
+                        android:id="@+id/wode_check"
+                        android:layout_marginRight="20dp"
+                        android:button="@null"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@mipmap/biyan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </CheckBox>
+
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+
+                    android:layout_marginTop="1dp"
+                    android:id="@+id/wode_donghuatwo"
+                    android:background="#fff"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+                    <ImageView
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/anquan"
+                        android:layout_marginLeft="20dp"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/anquan"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp">
+
+                    </ImageView>
+
+                    <EditText
+                        android:id="@+id/wode_mimatwo"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        android:background="@drawable/editedback"
+                        android:hint="请输入验证码"
+                        android:paddingLeft="60dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="15sp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+                    </EditText>
+
+
+                    <Button
+                        android:id="@+id/wode_yanzhengma"
+                        android:textSize="10sp"
+                        android:background="@drawable/wodebuttonback"
+                        android:textColor="#fff"
+                        android:text="获取验证码"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="70dp"
+                        android:layout_height="25dp">
+
+                    </Button>
+
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/xian"
+                android:background="#ADADAD"
+                android:layout_below="@+id/edittwo"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/wode_xuanze"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/xian"
+                android:textColor="#000000"
+                android:text="账号密码登录"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/wode_wangjimima"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/xian"
+                android:textColor="#000000"
+                android:text="忘记密码?"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/xian"
+                android:textColor="#000000"
+                android:text="请将下列图片点击翻转正面朝上"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/wode_huanyipi"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="60dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/xian"
+                android:textColor="#D0021B"
+                android:text="换一批"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <LinearLayout
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/wode_huanyipi"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/wode_tuone"
+
+                        android:layout_gravity="center"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </ImageView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/wode_tutwo"
+
+                        android:layout_gravity="center"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </ImageView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/wode_tuthree"
+
+                        android:layout_gravity="center"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </ImageView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/wode_tufour"
+
+                        android:layout_gravity="center"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </ImageView>
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+            <Button
+                android:id="@+id/wode_denglu"
+                android:layout_marginTop="200dp"
+                android:layout_below="@+id/xian"
+                android:background="#B0B0B0"
+                android:textColor="#fff"
+                android:text="登录"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+            </Button>
+
+
+            <TextView
+
+
+                android:textSize="13sp"
+                android:layout_marginTop="260dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/xian"
+                android:textColor="#000000"
+                android:text="登录即表示您已阅读并同意"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:textSize="13sp"
+                android:id="@+id/wode_xieyi"
+                android:layout_marginTop="290dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/xian"
+                android:textColor="#5496E4"
+                android:text="诱惑用户服务协议  有货隐私条款"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+
+
+            <LinearLayout
+
+                android:layout_marginBottom="50dp"
+
+                android:layout_below="@+id/wode_xieyi"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/wode_weixin"
+                        android:paddingTop="15dp"
+                        android:drawableTop="@mipmap/weixin"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/wodeback"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp">
+
+                    </Button>
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:id="@+id/wode_qq"
+                        android:paddingTop="15dp"
+                        android:drawableTop="@mipmap/qq"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/wodeback"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp">
+
+                    </Button>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:id="@+id/wode_zhifubao"
+                        android:paddingTop="15dp"
+                        android:drawableTop="@mipmap/zhifubao"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/wodeback"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp">
+
+                    </Button>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <Button
+
+                        android:id="@+id/wode_weibo"
+                        android:paddingTop="15dp"
+                        android:drawableTop="@mipmap/weibo"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/wodeback"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp">
+
+                    </Button>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+
+
+
+        <ImageView
+            android:id="@+id/wode_chazi"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/chazi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+
+        <TextView
+            android:gravity="center"
+            android:background="@drawable/wodelinearback"
+            android:textColor="#fff"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/wode_zhuce"
+            android:text="    注册    "
+            android:layout_width="wrap_content"
+            android:layout_height="22dp">
+
+        </TextView>
+
+
+
+
+
+
+
+
+</RelativeLayout>

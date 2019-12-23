@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mvp.view.activity.ErWeiMaActivity"
+    android:background="@mipmap/jianbian">
+
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        android:background="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:text="＜ 我的二维码"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:background="@drawable/editback"
+        android:layout_centerInParent="true"
+        android:layout_width="300dp"
+        android:layout_height="450dp">
+
+
+        <ImageView
+            android:id="@+id/erweima_image"
+            android:layout_marginBottom="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+        </ImageView>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:background="#333333"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/erweima_dianjishuaxin"
+            android:layout_marginLeft="10dp"
+            android:layout_centerInParent="true"
+            android:textColor="#fff"
+            android:text="点击刷新二维码"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+    </RelativeLayout>
+
+
+</RelativeLayout>

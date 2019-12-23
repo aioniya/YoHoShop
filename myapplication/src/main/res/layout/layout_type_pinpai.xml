@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F0F0F0">
+
+    <RadioGroup
+        android:id="@+id/pinpai_group"
+        android:background="#fff"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+
+            android:checked="true"
+            android:id="@+id/pinpai_nanzhuang"
+            android:textSize="13sp"
+            android:paddingLeft="10dp"
+            android:textColor="@drawable/textcolors"
+            android:text="男装"
+            android:drawableRight="@mipmap/shuxian"
+            android:button="@null"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </RadioButton>
+
+        <RadioButton
+
+            android:id="@+id/pinpai_nvzhuang"
+            android:textSize="13sp"
+            android:paddingLeft="3dp"
+            android:textColor="@drawable/textcolors"
+            android:text="女装"
+            android:drawableRight="@mipmap/shuxian"
+            android:button="@null"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </RadioButton>
+
+        <RadioButton
+
+            android:id="@+id/pinpai_shenghuofangshi"
+            android:textSize="13sp"
+
+            android:textColor="@drawable/textcolors"
+            android:text="生活方式"
+            android:drawableRight="@mipmap/shuxian"
+            android:button="@null"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </RadioButton>
+
+        <RadioButton
+
+            android:id="@+id/pinpai_chaotong"
+            android:textSize="13sp"
+            android:paddingLeft="5dp"
+            android:textColor="@drawable/textcolors"
+            android:text="潮童"
+            android:drawableRight="@mipmap/shuxian"
+            android:button="@null"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </RadioButton>
+
+        <RadioButton
+
+            android:id="@+id/pinpai_gaojie"
+            android:textSize="13sp"
+            android:textColor="@drawable/textcolors"
+            android:text="高街BLK"
+            android:button="@null"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </RadioButton>
+
+
+    </RadioGroup>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_below="@+id/pinpai_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/pinpai_appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+
+                android:background="#fff"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+                                <RelativeLayout
+                                    android:background="#fff"
+                                    android:id="@+id/pinpai_sou"
+                                    android:layout_below="@+id/pinpai_group"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="70dp">
+
+                                    <RelativeLayout
+                                        android:background="@drawable/relativeback"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_centerInParent="true"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="45dp">
+
+                                        <ImageView
+                                            android:layout_marginLeft="20dp"
+                                            android:layout_centerVertical="true"
+                                            android:src="@mipmap/sou"
+                                            android:layout_width="23dp"
+                                            android:layout_height="23dp">
+                                        </ImageView>
+
+                                        <TextView
+                                            android:textColor="#8A8A8B"
+                                            android:layout_marginLeft="55dp"
+                                            android:layout_centerVertical="true"
+                                            android:text="搜索品牌"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+
+                                        </TextView>
+
+                                    </RelativeLayout>
+
+                                </RelativeLayout>
+                                <RelativeLayout
+
+                                    android:layout_below="@+id/pinpai_sou"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="200dp">
+
+                                    <com.youth.banner.Banner
+                                        android:id="@+id/pinpai_banner"
+                                        android:background="#fff"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                    </com.youth.banner.Banner>
+
+
+                                </RelativeLayout>
+                                <RelativeLayout
+                                    android:id="@+id/center"
+                                    android:background="#fff"
+                                    android:layout_below="@+id/pinpai_banner"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="200dp">
+
+                                    <ImageView
+                                        android:src="@mipmap/qiuxiezio"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                    </ImageView>
+
+
+                                </RelativeLayout>
+                                <RelativeLayout
+                                    android:id="@+id/centertwo"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:layout_below="@+id/center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp">
+
+                                    <RadioGroup
+                                        android:id="@+id/pinpai_grouptwo"
+                                        android:background="#fff"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:orientation="horizontal">
+
+                                        <RadioButton
+
+                                            android:checked="true"
+                                            android:id="@+id/pinpai_quanbu"
+                                            android:textSize="18sp"
+                                            android:paddingLeft="10dp"
+                                            android:textColor="@drawable/textcolors"
+                                            android:text="全部品牌"
+                                            android:drawableRight="@mipmap/shuxian"
+                                            android:button="@null"
+                                            android:textAlignment="center"
+                                            android:layout_weight="1"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent">
+
+                                        </RadioButton>
+
+                                        <RadioButton
+
+                                            android:id="@+id/pinpai_xinruzhu"
+                                            android:textSize="18sp"
+                                            android:textColor="@drawable/textcolors"
+                                            android:text="新入住品牌"
+
+                                            android:button="@null"
+                                            android:textAlignment="center"
+                                            android:layout_weight="1"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent">
+
+                                        </RadioButton>
+
+                                        <RadioButton
+
+                                            android:id="@+id/pinpai_remen"
+                                            android:textSize="18sp"
+                                            android:paddingRight="10dp"
+                                            android:textColor="@drawable/textcolors"
+                                            android:text="热门品牌"
+                                            android:drawableLeft="@mipmap/shuxian"
+                                            android:button="@null"
+                                            android:textAlignment="center"
+                                            android:layout_weight="1"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent">
+
+                                        </RadioButton>
+
+
+                                    </RadioGroup>
+
+
+
+                                </RelativeLayout>
+
+
+
+                            </LinearLayout>
+                        </ScrollView>
+
+
+
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <RelativeLayout
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/pinpai_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:visibility="gone"
+                android:background="#fff"
+                android:id="@+id/pinpai_recyclerviewtwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </RelativeLayout>
+
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <com.example.myapplication.ui.MyScorllRight
+        android:id="@+id/pinpai_myscrollright"
+        android:layout_below="@+id/pinpai_group"
+        android:layout_alignParentRight="true"
+        android:layout_width="30dp"
+        android:layout_height="match_parent">
+
+    </com.example.myapplication.ui.MyScorllRight>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

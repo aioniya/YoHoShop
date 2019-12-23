@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:drawable="@drawable/unseletebeijing" android:state_selected="false"></item>
+<item android:drawable="@drawable/seletebeijing" android:state_selected="true" tools:ignore="ResourceCycle"></item>
+</selector>

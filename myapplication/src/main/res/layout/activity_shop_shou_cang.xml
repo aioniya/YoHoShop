@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mvp.view.activity.ShopShouCangActivity"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:background="#0D0D0D"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        >
+        <TextView
+            android:id="@+id/shopshoucang_fanhui"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:textColor="#fff"
+            android:text="＜"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:textColor="#fff"
+            android:text="普通商品"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+
+            android:id="@+id/shopshoucang_bianji"
+            android:textSize="20sp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="#fff"
+            android:text="编辑"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/shopshoucang_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
